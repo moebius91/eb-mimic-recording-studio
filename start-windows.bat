@@ -61,7 +61,7 @@ if not exist backend\ffmpeg.exe (
    echo "Installing FFMPEG..."
    powershell -command "[Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12 ; wget https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip -outfile ffmpeg.zip"
    powershell -command "Expand-Archive -Path "ffmpeg.zip" -DestinationPath "ffmpeg"
-   copy ffmpeg\ffmpeg-4.4-essentials_build\bin\ffmpeg.exe backend\ffmpeg.exe
+   copy ffmpeg\ffmpeg-6.0-essentials_build\bin\ffmpeg.exe backend\ffmpeg.exe
 )
 
 
@@ -69,7 +69,7 @@ rem ======================================================================
 rem Start Python backend
 rem ======================================================================
 cd backend
-set CORPUS=english_corpus.csv
+set CORPUS=deutsch_corpus.csv
 "%python3_dir%\scripts\pip.exe" install -r requirements.txt
 start "Python Backend" "%python3_dir%\python.exe" run.py
 cd ..
