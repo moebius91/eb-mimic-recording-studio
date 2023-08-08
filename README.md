@@ -54,7 +54,7 @@ individuals, each of which can be used to produce a distinct voice for Mimic.
 
 ### Windows self-hosted Quick Start
 
-* `git clone https://github.com/MycroftAI/mimic-recording-studio.git`
+* `git clone https://github.com/moebius91/eb-mimic-recording-studio.git`
 * `cd mimic-recording-studio`
 * `start-windows.bat`
 
@@ -69,7 +69,7 @@ Why docker? To make this super easy to set up and run cross platforms.
 
 #### Build and Run
 
-* `git clone https://github.com/MycroftAI/mimic-recording-studio.git`
+* `git clone https://github.com/moebius91/eb-mimic-recording-studio.git`
 * `cd mimic-recording-studio`
 * `docker-compose up` to build and run (_Note: You may need to use `sudo docker-compose up` depending on your distribution_)
 
