@@ -1,7 +1,7 @@
 version: '3'
 services:
   backend:
-    container_name: mrs-backend
+    container_name: eb-mrs-backend
     build:
       context: ./backend/
     ports:
@@ -13,7 +13,7 @@ services:
     - APIPORT=5000
     - WEBWORKERS=1
   frontend:
-    container_name: mrs-frontend
+    container_name: eb-mrs-frontend
     build:
       context: ./frontend/
     ports:
